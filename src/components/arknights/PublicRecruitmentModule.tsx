@@ -94,6 +94,9 @@ const PublicRecruitmentModule = ({model}: PublicRecruitmentModuleProps) => {
             }
         };
 
+        if (!data.selectTags)
+            data.selectTags = []
+
         return (
             <div className='flex col surface-0 border-round-lg gap-2'>
                 <Avatar label={index.toString()}/>
